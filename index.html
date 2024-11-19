@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="navbar-header">
+            <h1>HTML Documentation</h1>
+        </header>
+        <div class="nav-links">
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Tags" class="nav-link">Tags</a>
+            <a href="#Forms" class="nav-link">Forms</a>
+            <a href="#Buttons" class="nav-link">Buttons</a>
+            <a href="#Dom" class="nav-link">Dom</a>
+        </div>
+    </nav>
+
+    </div>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><h2>Introduction</h2></header>
+            <p>HTML (Hypertext Markup Language) is the standard language used to structure and display content on the
+                web.
+                It defines the content and structure of a webpage using a system of elements or "tags" that provide the
+                framework for text, images, multimedia, links, and more. HTML is the backbone of nearly every website
+                and is
+                used alongside other technologies like CSS (Cascading Style Sheets) and JavaScript to create modern web
+                pages and applications.</p>
+            <p>An html is defined like this inside of an html file</p>
+            <pre><code>
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                &lt;title>Document</title>
+                &lt;/head>
+                &lt;body>
+                    
+                &lt;/body>
+                &lt;/html>
+            </code></pre>
+            <h3>Purpose: </h3>
+            <p>
+            <ul>
+                <li>To provide structure and meaning to the content of a webpage.</li>
+                <li>To create the foundation upon which all other web technologies (CSS, JavaScript, etc.) interact.
+                </li>
+                <li>HTML is the building block of the web, used to represent documents in a readable format.</li>
+            </ul>
+            </p>
+            <h3>Common Use Cases: </h3>
+            <ul>
+                <li>Building websites, blogs, and web applications.</li>
+                <li>Formatting content for display on browsers.</li>
+                <li>Creating interactive forms and user interfaces.</li>
+            </ul>
+</section>
+
+            <section class="main-section" id="Tags">
+                <header><h2>Tags</h2></header>
+                <p>HTML tags are the building blocks of a webpage's structure. They define different parts of a web page
+                    and
+                    provide the necessary information for browsers to render and display content correctly. Tags usually
+                    come in
+                    pairs, with an opening tag and a closing tag, although some tags are self-closing.</p>
+                <h3>Key html tags: </h3>
+                <pre><code>
+            &lt;p>&lt;/p>, &lt;a href="">&lt;/a>, &lt;ul>&lt;/ul>
+        </code></pre>
+        <pre><code>
+            &lt;ol>&lt;/ol>, &lt;img src="" alt="">, &lt;div>&lt;/div>
+        </code></pre>
+        <pre><code>
+            &lt;span>&lt;/span>, &lt;form action="">&lt;/form>
+        </code></pre>
+                <h3>Purpose: </h3>
+                <ul>
+                    <li>To structure and organize content for web browsers.</li>
+                    <li>To add semantic meaning to content, such as defining headings, paragraphs, and links.</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Forms">
+                <header><h2>Forms</h2></header>
+                <p>Forms in HTML are used to collect input from users and send the data to a server for processing. HTML
+                    forms
+                    consist of various input elements, such as text boxes, radio buttons, checkboxes, and submit
+                    buttons. The
+                    data entered into these form fields can be sent to a server for processing, often using methods like
+                    GET or
+                    POST.</p>
+                <h3>Common Form Elements: </h3>
+                <pre><code>
+            &lt;input type="text">, &lt;label for="">&lt;/label>, &lt;select name="" id="">&lt;/select>
+        </code></pre>
+        <pre><code>
+            &lt;textarea name="" id="">&lt;/textarea>, &lt;button>&lt;/button>
+        </code></pre>
+                <h3>Purpose: </h3>
+                <ul>
+                    <li>To gather data from users in a structured and accessible manner.</li>
+                    <li>To create interactive forms for tasks like user registration, login, surveys, and feedback
+                        collection.
+                    </li>
+                </ul>
+
+            </section>
+
+            <section class="main-section" id="Buttons">
+                <header><h2>Buttons</h2></header>
+                <p>Buttons are HTML elements that users can click to perform specific actions. These actions could include
+                submitting a form, resetting input fields, or triggering JavaScript functionality. Buttons are defined
+                using the
+                &lt;button> tag or the &lt;input type="button"> element, each with different use cases.</p>
+
+                <h3>Types of buttons: </h3>
+                <pre><code>
+        &lt;button>&lt;/button>, &lt;input type="submit">, &lt;input type="reset">, &lt;input type="button">
+    </code></pre>
+                <h3>Purpose: </h3>
+                <ul>
+                    <li>To provide interactivity on a webpage.</li>
+                    <li>To initiate actions such as form submissions, navigating to another page, or executing
+                        JavaScript
+                        events.</li>
+                </ul>
+
+            </section>
+            <section class="main-section" id="Dom">
+                <header><h2>Document Object Model (DOM)</h2></header>
+
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                    structure of
+                    a webpage as a tree of nodes, where each node is an object representing part of the page, such as an
+                    element, attribute, or piece of text. JavaScript can manipulate the DOM to dynamically update the
+                    content,
+                    structure, and styling of a webpage.</p>
+                <h3>Key Concepts of DOM: </h3>
+                <ul>
+                    <li><strong>DOM Tree Structure:</strong> The DOM represents the page in a hierarchical structure,
+                        where the &lt;html> element is the root, and all other elements are child nodes.</li>
+                    <li><strong>Node Types:</strong> There are several types of nodes, including element nodes (e.g.,
+                        &lt;div>, &lt;p>), text nodes (e.g., the text within a paragraph), and attribute nodes (e.g.,
+                        the class attribute).</li>
+                    <li><strong>DOM Manipulation:</strong> JavaScript can interact with and modify the DOM to change
+                        content, add new elements, or respond to user actions.</li>
+                </ul>
+                <h3>Common DOM Methods: </h3>
+                <ul>
+                    <li>getElementById(): Selects an element by its ID.</li>
+                    <li>getElementsByClassName(): Selects elements by their class name.</li>
+                    <li>createElement(): Creates a new HTML element.</li>
+                    <li>innerHTML: Sets or retrieves the HTML content inside an element.</li>
+                </ul>
+                <h3>Purpose: </h3>
+                <ul>
+                    <li>To enable dynamic content updates and interactive features on a webpage.</li>
+                    <li>To provide developers with a way to modify the content and structure of the page in response to
+                        user interactions.</li>
+                </ul>
+            </section>
+    </main>
+</body>
+
+</html>
